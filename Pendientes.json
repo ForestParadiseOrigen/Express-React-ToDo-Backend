@@ -1,0 +1,14 @@
+{
+    "titulo":"Lista de compras en D1",
+    "descrip":"Lista de compras encargada por mi madre.",
+    "tareas":[
+        {
+            "titulo":"Una libra de aguacate",
+            "estado":false
+        },
+        {
+            "titulo":"Un salchichon de pollo",
+            "estado": true
+        }
+    ]
+}

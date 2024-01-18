@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ToDo_Paradise",
+    "dateExported": "2024-01-18T21:03:17.497Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8f6211e9-d292-4123-af2a-c04a745c39ab",
+            "colId": "b4bb399f-8252-4b7e-9d34-88654607f96b",
+            "containerId": "",
+            "name": "ConsultarPendientes",
+            "url": "http://localhost:5000/server/todoparadise/pendientes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-04T13:27:43.282Z",
+            "modified": "2024-01-04T13:27:50.263Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3aed1a85-c5c6-4cee-89b6-24855f69ac13",
+            "colId": "b4bb399f-8252-4b7e-9d34-88654607f96b",
+            "containerId": "",
+            "name": "BuscarPendientesPorID",
+            "url": "http://localhost:5000/server/todoparadise/pendientes/6596ae083b52cb0b14dce68b",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-01-04T13:14:50.207Z",
+            "modified": "2024-01-04T13:26:42.394Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d4e407b5-bae3-4b1c-8dee-5bdebeb80b5e",
+            "colId": "b4bb399f-8252-4b7e-9d34-88654607f96b",
+            "containerId": "",
+            "name": "ActualizarPendientes",
+            "url": "http://localhost:5000/server/todoparadise/pendientes/6596ae083b52cb0b14dce68b",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-01-04T13:13:26.114Z",
+            "modified": "2024-01-04T21:16:38.110Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"titulo\": \"Componentes para Nate\",\n      \"descrip\": \"Lista de componentes para el PC de Nate Gentile.\",\n      \"tareas\": [\n        {\n          \"titulo\": \"Intel i78 Stoner Stone\",\n          \"estado\": false,\n          \"_id\": \"6596ae083b52cb0b14dce68c\"\n        },\n        {\n          \"titulo\": \"Nvidia RTO 9060\",\n          \"estado\": false,\n          \"_id\": \"6596ae083b52cb0b14dce68d\"\n        },\n        {\n          \"titulo\": \"Asus Ena 24G RAM 9000Gz\",\n          \"estado\": false,\n          \"_id\": \"6596ae083b52cb0b14dce68e\"\n        }\n      ],\n      \"__v\": 0\n    }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "12d13eb2-0b8b-432b-b90f-6c10dea926be",
+            "colId": "b4bb399f-8252-4b7e-9d34-88654607f96b",
+            "containerId": "",
+            "name": "RegistrarPendiente",
+            "url": "http://localhost:5000/server/todoparadise/pendientes",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-04T12:16:20.703Z",
+            "modified": "2024-01-17T20:09:00.637Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\":\"To-Do Paradise Faltantes 2\",\n  \"estado\": true\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9c1e24c9-9797-4172-90f3-056988c71900",
+            "colId": "b4bb399f-8252-4b7e-9d34-88654607f96b",
+            "containerId": "",
+            "name": "EliminarPendidientes",
+            "url": "http://localhost:5000/server/todoparadise/pendientes/659d3fba3fb36ba3ff056911",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-01-09T13:14:24.281Z",
+            "modified": "2024-01-09T13:15:53.224Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
