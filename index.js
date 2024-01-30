@@ -11,13 +11,14 @@ app.use(cors());
 
 var CONNECTION_STRING="mongodb://localhost:27017"
 var DATABASENAME="ToDo_Paradise";
+var DATABASENAME_INN="Innovacion";
 var database;
 
 app.listen(
     5038, () =>{
         MongoClient.connect(
             CONNECTION_STRING, (error, client) => {
-                database = client.db(DATABASENAME)
+                database = client.db(DATABASENAME_INN)
                 console.log("Mongo DB esta vivo!")
             }
         )

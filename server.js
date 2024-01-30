@@ -2,11 +2,14 @@ const express = require("express")
 const dotenv = require("dotenv")
 const colors = require('colors')
 const conectarDB = require('./config/db')
+const conectarbd_inn = require("./config/db_inn");
 const cors = require('cors');
 
 //dependencias de rutas
 const pendientesRoutes = require('./routes/pendientesRoutes');
-const usuariosRoutes = require('./routes/usuariosRoutes')
+const ideasRoutes = require('./routes/ideasRoutes');
+const usuariosRoutes = require('./routes/usuariosRoutes');
+constRideasoutes = require('./routes/usuariosRoutes')
 
 
 //vincular el archivo .env
@@ -16,6 +19,7 @@ dotenv.config(
 
 //CONECTAR A DB
 conectarDB()
+// conectarbd_inn()
 
 //construir objeto app
 const app=express()
@@ -28,11 +32,16 @@ app.use(cors({
 
 //conectar las rutas al objeto app
 app.use('/server/todoparadise/pendientes',
-        pendientesRoutes);
+    pendientesRoutes
+);
 
 app.use('/server/todoparadise/usuarios',
-        usuariosRoutes);
-
+    usuariosRoutes
+);
+        
+app.use('/server/todoparadise/ideas',
+    ideasRoutes
+);
 //un puerto de ejecucion
 app.listen(process.env.PUERTO , ()=>{
     console.log(`Servidor en ejecucion ${process.env.PUERTO}`.bgWhite.blue.bold)
