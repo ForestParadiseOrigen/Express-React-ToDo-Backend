@@ -9,6 +9,7 @@ const cors = require('cors');
 const pendientesRoutes = require('./routes/pendientesRoutes');
 const ideasRoutes = require('./routes/ideasRoutes');
 const usuariosRoutes = require('./routes/usuariosRoutes');
+const retosRoutes = require('./routes/retosRoutes');
 constRideasoutes = require('./routes/usuariosRoutes')
 
 
@@ -42,6 +43,11 @@ app.use('/server/todoparadise/usuarios',
 app.use('/server/todoparadise/ideas',
     ideasRoutes
 );
+
+app.use('/server/todoparadise/retos',
+    retosRoutes
+);
+
 //un puerto de ejecucion
 app.listen(process.env.PUERTO , ()=>{
     console.log(`Servidor en ejecucion ${process.env.PUERTO}`.bgWhite.blue.bold)
