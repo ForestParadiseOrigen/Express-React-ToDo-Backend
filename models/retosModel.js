@@ -18,10 +18,6 @@ const retosSchema = new mongoose.Schema(
         },
         'color': {
             type: String,
-            require:[
-                true,
-                'Este reto debe tener un color'
-            ],
             default: '#71717a',
             enum: [
                 '#71717a', // zinc-500
@@ -32,8 +28,7 @@ const retosSchema = new mongoose.Schema(
         },
         "conexiones": {
             "objetivo": {
-                type: String,
-                require: 'Debe existir un objetivo para realizar una conexion'
+                type: String
             },
             'tipo': {
                 type: String,

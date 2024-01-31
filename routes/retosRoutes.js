@@ -44,13 +44,13 @@ try {
         res.status(500)
         .json({
             success: false,
-            msg:"El identificador de la idea es invalido."
+            msg:"El identificador del reto es invalido."
         })  
     }else{
 
-        const pendientes = 
+        const retosId = 
         await RetosModel.findById(retosId)
-        if(pendientes){
+        if(retosId){
             res.
             status(200).
             json({
