@@ -43,9 +43,11 @@ const retosSchema = new mongoose.Schema(
         "id_estado": {
             type: Number
         },
-        "sg_estado": {
-            type: Number
-        },
+        "sg_estado": [
+            {
+                type: Number
+            }
+        ],
         "tipo": {
             type: String,
             default: 'reto'
