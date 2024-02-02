@@ -10,6 +10,7 @@ const pendientesRoutes = require('./routes/pendientesRoutes');
 const ideasRoutes = require('./routes/ideasRoutes');
 const usuariosRoutes = require('./routes/usuariosRoutes');
 const retosRoutes = require('./routes/retosRoutes');
+const datosRoutes = require('./routes/datosRoutes');
 constRideasoutes = require('./routes/usuariosRoutes')
 
 
@@ -46,6 +47,10 @@ app.use('/server/todoparadise/ideas',
 
 app.use('/server/todoparadise/retos',
     retosRoutes
+);
+
+app.use('/server/todoparadise/datos',
+    datosRoutes
 );
 
 //un puerto de ejecucion
